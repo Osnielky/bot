@@ -12,4 +12,6 @@ import { IncomeAlert } from './income-alert.entity';
   providers: [IncomeAlertService]
 })
 
+
+
 export class IncomeAlertModule {}

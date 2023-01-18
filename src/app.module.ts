@@ -10,7 +10,7 @@ import { IncomeAlert } from './income_alert/income-alert.entity';
     TypeOrmModule.forRoot({
             type: 'sqlite',
             database: 'alerts.db',
-            entities: [IncomeAlert, ],
+            entities: [IncomeAlert ],
             synchronize: true, //development only
           }),
     IncomeAlertModule],

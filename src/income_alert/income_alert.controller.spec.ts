@@ -10,9 +10,12 @@ describe('IncomeAlertController', () => {
     }).compile();
 
     controller = module.get<IncomeAlertController>(IncomeAlertController);
+    
   });
+
 
   it('should be defined', () => {
     expect(controller).toBeDefined();
   });
+
 });

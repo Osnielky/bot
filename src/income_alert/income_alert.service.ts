@@ -11,11 +11,11 @@ export class IncomeAlertService {
   ) {}
 
   postingMessage(): string {
-    return 'Hello World!1111';
+    return 'Printing from income alert service';
   }
 
-  create(name: string) {
-    const user = this.repo.create({ name });
-    return this.repo.save(user);
+  create(exchange: string,ticker: string,volume: number, time: string, close: number, open: number, high:number , low: number, rsi: number ) {
+    const rsiAlert = this.repo.create({ exchange,ticker,volume,time,close,open,high,low, rsi });
+    return this.repo.save(rsiAlert);
   }
 }
